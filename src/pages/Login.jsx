@@ -20,6 +20,16 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const savedUser = JSON.parse(localStorage.getItem("user") || "null");
+
+    localStorage.setItem(
+      "user",
+      JSON.stringify({
+        fullName: savedUser?.fullName || formData.email.split("@")[0],
+        email: formData.email,
+      })
+    );
+
     navigate("/catalogue");
   };
 

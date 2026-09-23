@@ -31,6 +31,11 @@ const Register = () => {
       return;
     }
 
+    localStorage.setItem(
+      "user",
+      JSON.stringify({ fullName: formData.fullName, email: formData.email })
+    );
+
     navigate("/catalogue");
   };
 

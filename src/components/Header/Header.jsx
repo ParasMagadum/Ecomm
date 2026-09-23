@@ -44,7 +44,7 @@ const Header = () => {
           </Link>
 
           <Link
-            to="/login"
+            to="/profile"
             className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-lg text-slate-700 transition hover:bg-blue-50 hover:text-blue-600"
           >
             ♙

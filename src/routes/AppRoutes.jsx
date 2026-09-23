@@ -5,6 +5,7 @@ import Register from "../pages/Register";
 import Catalogue from "../pages/Catalogue";
 import Cart from "../pages/Cart";
 import Checkout from "../pages/Checkout";
+import Profile from "../pages/Profile";
 
 const AppRoutes = () => {
   return (
@@ -17,6 +18,7 @@ const AppRoutes = () => {
         <Route path="/catalogue" element={<Catalogue />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/profile" element={<Profile />} />
       </Route>
 
       <Route path="*" element={<Navigate to="/catalogue" replace />} />

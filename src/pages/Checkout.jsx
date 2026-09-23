@@ -26,6 +26,20 @@ const Checkout = () => {
       return;
     }
 
+    const orders = JSON.parse(localStorage.getItem("orders") || "[]");
+    const subtotal = cart.reduce(
+      (total, item) => total + item.price * item.quantity,
+      0
+    );
+
+    orders.unshift({
+      id: `EC-${Date.now().toString().slice(-6)}`,
+      date: new Date().toISOString(),
+      items: cart,
+      total: subtotal,
+      deliveryDetails: formData,
+    });
+    localStorage.setItem("orders", JSON.stringify(orders));
     localStorage.removeItem("cart");
 
     alert("Your order has been placed successfully.");
