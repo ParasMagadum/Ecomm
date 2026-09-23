@@ -31,7 +31,7 @@ const Login = () => {
             to="/catalogue"
             className="text-2xl font-extrabold tracking-tight text-slate-900"
           >
-            E-COMMERCE
+            EasyCart
           </Link>
 
           <p className="mt-3 text-sm text-slate-500">

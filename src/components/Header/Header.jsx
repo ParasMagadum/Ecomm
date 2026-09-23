@@ -8,7 +8,7 @@ const Header = () => {
           to="/catalogue"
           className="shrink-0 text-xl font-extrabold tracking-tight text-slate-900"
         >
-          E-COMMERCE
+          EasyCart
         </Link>
 
         <div className="hidden flex-1 md:block">
