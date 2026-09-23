@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import Login from "../pages/Login";
+import Register from "../pages/Register";
 import Catalogue from "../pages/Catalogue";
 import Cart from "../pages/Cart";
 import Checkout from "../pages/Checkout";
@@ -9,6 +10,7 @@ const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
 
       <Route element={<MainLayout />}>
         <Route path="/" element={<Navigate to="/catalogue" replace />} />
